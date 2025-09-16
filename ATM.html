@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ATM Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Login -->
+    <div id="loginSection">
+      <h2>ATM Login</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <input type="password" id="pin" placeholder="Enter your PIN">
+      <button style="width:95%" onclick="login()">Login</button>
+      <div class="message" id="loginMsg"></div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menuSection" class="hidden">
+      <h2>Welcome, <span id="userName"></span></h2>
+      <div class="menu">
+        <button onclick="checkBalance()">Balance</button>
+        <button onclick="showWithdraw()">Withdraw</button>
+        <button onclick="showDeposit()">Deposit</button>
+        <button onclick="showChangePin()">Change PIN</button>
+        <button style="width:95%" onclick="logout()">Exit</button>
+      </div>
+      <div class="message" id="menuMsg"></div>
+    </div>
+
+    <!-- Withdraw -->
+    <div id="withdrawSection" class="hidden">
+      <h2>Withdraw</h2>
+      <input type="number" id="withdrawAmount" placeholder="Enter amount">
+      <button onclick="withdraw()">Submit</button>
+      <button onclick="backToMenu()">Back</button>
+      <div class="message" id="withdrawMsg"></div>
+    </div>
+
+    <!-- Deposit -->
+    <div id="depositSection" class="hidden">
+      <h2>Deposit</h2>
+      <input type="number" id="depositAmount" placeholder="Enter amount">
+      <button onclick="deposit()">Submit</button>
+      <button onclick="backToMenu()">Back</button>
+      <div class="message" id="depositMsg"></div>
+    </div>
+
+    <!-- Change PIN -->
+    <div id="changePinSection" class="hidden">
+      <h2>Change PIN</h2>
+      <input type="password" id="oldPin" placeholder="Enter old PIN">
+      <input type="password" id="newPin" placeholder="Enter new PIN">
+      <button onclick="changePin()">Submit</button>
+      <button onclick="backToMenu()">Back</button>
+      <div class="message" id="pinMsg"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

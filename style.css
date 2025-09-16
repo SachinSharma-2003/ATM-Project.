@@ -1,0 +1,92 @@
+ /* General Page Style */
+ body {
+     font-family: 'Courier New', monospace;
+     background: linear-gradient(135deg, #0a0f0a, #1b3b1a);
+     color: #00ff66;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+ /* ATM Container */
+ .container {
+     width: 380px;
+     background: #111;
+     padding: 25px;
+     border-radius: 15px;
+     text-align: center;
+     box-shadow: 0 0 20px #00ff66, inset 0 0 10px #003300;
+ }
+
+ h2 {
+     margin-bottom: 20px;
+     color: #00ff66;
+     text-shadow: 0 0 10px #00ff66;
+ }
+
+ /* Inputs */
+ input {
+     width: 90%;
+     padding: 12px;
+     margin: 10px 0;
+     border-radius: 8px;
+     border: 2px solid #00ff66;
+     background: #000;
+     color: #00ff66;
+     font-size: 16px;
+     outline: none;
+     text-align: center;
+ }
+
+ input::placeholder {
+     color: #00ff6699;
+ }
+
+ /* Buttons */
+ button {
+     width: 45%;
+     padding: 12px;
+     margin: 8px 2%;
+     border: none;
+     border-radius: 8px;
+     background: #00ff66;
+     color: #000;
+     font-weight: bold;
+     font-size: 16px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ button:hover {
+     background: #00cc52;
+     box-shadow: 0 0 10px #00ff66;
+ }
+
+ /* Message Box */
+ .message {
+     margin-top: 15px;
+     padding: 12px;
+     background: #001a0d;
+     border-radius: 8px;
+     border: 1px solid #00ff66;
+     min-height: 20px;
+ }
+
+ /* Hide Sections */
+ .hidden {
+     display: none;
+ }
+
+ /* Menu Buttons layout */
+ .menu {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .menu button {
+     width: 48%;
+     margin: 8px 1%;
+ }
